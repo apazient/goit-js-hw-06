@@ -3,8 +3,8 @@ let inputData = "";
 input.addEventListener(`blur`, onInputValid);
 function onInputValid(event) {
     inputData=event.currentTarget.value
-    
-    if (inputData.length >= input.getAttribute(`data-length`)) {
+  
+    if (inputData.length === Number(input.getAttribute(`data-length`))) {
         input.classList.add(`valid`)
         input.classList.remove(`invalid`)
      
