@@ -19,7 +19,9 @@ const galleryItem = images.map(el => {
   const itemEl=  `<li >${imgEl}</li>`;
   return itemEl;
 }).join("")
-console.log(galleryItem);
+
+  
+ console.log(galleryItem)
 galleryList.insertAdjacentHTML(`afterbegin`,galleryItem)
 
 

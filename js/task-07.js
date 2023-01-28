@@ -3,7 +3,7 @@ const refs = {
     output: document.querySelector(`#text`)
 }
 
-refs.input.addEventListener(`mousemove`, onRangeChange)
+refs.input.addEventListener(`input`, onRangeChange)
 function onRangeChange(event) {
 refs.output.style.fontSize=`${event.currentTarget.value}px`;
    
